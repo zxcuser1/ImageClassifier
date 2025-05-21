@@ -50,3 +50,4 @@ class ImageManager:
         logging.info(f"Загружено {len(images)} изображений.")
         return images
 
+
