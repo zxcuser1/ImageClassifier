@@ -14,3 +14,7 @@ def setup_logger():
         ],
         force=True
     )
+
+
+model_image_classifier = r'models\VIT.h5'
+image_classifier_size = (256, 256)

@@ -29,7 +29,7 @@ class ImageManager:
 
         if not os.path.isdir(self.load_folder_path):
             logging.error(f"Папка по пути {self.load_folder_path} не существует.")
-            raise ValueError(f"Папка по пути {self.load_folder_path} не существует.")
+            raise FileNotFoundError(f"Папка по пути {self.load_folder_path} не существует.")
 
         for file_name in os.listdir(self.load_folder_path):
             file_path = os.path.join(self.load_folder_path, file_name)
@@ -45,10 +45,7 @@ class ImageManager:
                     images.append(image)
                     logging.info(f"Изображение {file_name} успешно загружено.")
                 except Exception as e:
-                    logging.warning(f"Не удалось загрузить изображение {file_name}: {e}")
+                    logging.error(f"Не удалось загрузить изображение {file_name}: {e}")
 
         logging.info(f"Загружено {len(images)} изображений.")
         return images
-
-
-
