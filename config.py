@@ -16,5 +16,11 @@ def setup_logger():
     )
 
 
-model_image_classifier = r'models\VIT.h5'
+model_image_classifier_path = r'models\VIT.h5'
 image_classifier_size = (256, 256)
+
+model_image_segmentor_path = r'models\U-net.h5'
+image_segmentor_size = (512, 512)
+
+model_curve_classifier_path = r'models\CNN.h5'
+image_curve_classifier_size = (256, 256)
