@@ -28,4 +28,3 @@ class CurveClassifier(BaseModel):
             return predicted_class, confidence
         except Exception as e:
             logging.error(f"Ошибка при предсказании: {e}")
-            return None
