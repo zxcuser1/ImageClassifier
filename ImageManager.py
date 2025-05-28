@@ -55,6 +55,10 @@ class ImageManager:
         """
         Сохраняет изображение в папку с классом.
         """
+        if not os.path.isdir(self.save_folder_path):
+            logging.error(f"Папка по пути {self.save_folder_path} не существует.")
+            raise FileNotFoundError(f"Папка по пути {self.load_folder_path} не существует.")
+
         folder_path = self.save_folder_path + '/' + folder_name
         os.makedirs(folder_path, exist_ok=True)
         cv2.imwrite(folder_path + '/' + image_name, image)
