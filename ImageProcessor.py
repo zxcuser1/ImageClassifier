@@ -53,13 +53,6 @@ class ImageProcessor:
             logging.error(f"Не удалось инвертировать: {e}")
 
     @staticmethod
-    def bgr_to_rgb(img):
-        try:
-            return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        except Exception as e:
-            logging.error(f"Не удалось преобразовать BGR в RGB: {e}")
-
-    @staticmethod
     def normalize(img, is_classify_image: bool = False):
         """
             Нормализует изображение.
