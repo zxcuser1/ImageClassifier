@@ -70,7 +70,7 @@ Docker и Docker Compose
 - [Датасет для обучения модели сегментации](https://disk.yandex.ru/d/XK-0a8AdjDimmg)
 - [Датасет для обучения модели классификации кривых]([https://disk.yandex.ru/d/XK-0a8AdjDimmg](https://disk.yandex.ru/d/bQp4jT2FmFi8vg))
 
-**📥 Модели **
+**📥 Модели**
 
 - [Все обученные модели](https://disk.yandex.ru/d/5-DdgwBtTGN8uA)
 ---
